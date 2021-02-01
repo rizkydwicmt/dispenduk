@@ -105,7 +105,7 @@
                                 </div>
                                 <div class="col-12 d-flex justify-content-end">
                                     <button type="submit" class="btn btn-primary me-1 mb-1">Filter</button>
-                                    <button type="reset" class="btn btn-light-secondary me-1 mb-1">Reset</button>
+                                    <button type="reset" class="btn btn-light-secondary me-1 mb-1" onclick="location.href = ''">Reset</button>
                                 </div>
                             </div>
                         </form>
@@ -117,16 +117,22 @@
             <h4 class="card-title" id='judul_tabel'></h4>
         </div>
         <div class="card-body">
-            <table class='table table-striped' id="tabel">
-                {{-- 
+            <table class="table table-bordered table-striped table-condensed flip-content edit-table" id="tabel">
+                <thead>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            {{-- 
+            <table class='table table-striped' >                
                 <thead>
                     <tr id='thead'>
                     </tr>
                 </thead>
                 <tbody id='tbody'>
                 </tbody>
-                --}}
             </table>
+            --}}
         </div>
     </div>
     
@@ -156,6 +162,7 @@
 
 @section('js_script')
     <script>
+
         function select_kecamatan(){
             const token = $('meta[name="csrf-token"]').attr('content');
             $('#kelurahan').html("<option>-- PILIH --</option><option></option><option></option><option></option><option></option>");
@@ -229,7 +236,6 @@
             let form = $(this)[0];
             //mengambil semua data di dalam form
             let formData = new FormData(form);
-            $('#tabel').html('');
 
             if(isNaN($('#kecamatan').val()) || isNaN($('#kelurahan').val()))
             {
@@ -460,7 +466,6 @@
                             $('#judul_tabel').html("Statistik Jumlah Penduduk Menurut Wajib KTP"); 
                         }
                         
-                        console.log(data,$('#tbody').html());
                         $('#tabel').DataTable().destroy();
                         $('#tabel').DataTable({
                             dom: 'Bfrtip',
@@ -472,7 +477,6 @@
                             },
                             responsive: true
                         });
-                        console.log($('#tbody').html());
                     },
                     //jika ajax gagal
                     error: function () {

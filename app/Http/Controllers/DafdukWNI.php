@@ -50,7 +50,7 @@ class DafdukWNI extends Controller
                             ],
                         ],
         );
-        return view('konten/dafduk_wni-kk', $data);
+        return view('konten/dafduk_wni/kk', $data);
     }
 
     public function biodata()
@@ -110,7 +110,7 @@ class DafdukWNI extends Controller
                             ],
                         ],
         );
-        return view('konten/dafduk_wni-biodata', $data);
+        return view('konten/dafduk_wni/biodata', $data);
     }
 
     public function pindah()
@@ -146,7 +146,7 @@ class DafdukWNI extends Controller
                             ],
                         ],
         );
-        return view('konten/dafduk_wni-pindah', $data);
+        return view('konten/dafduk_wni/pindah', $data);
     }
 
     public function datang()
@@ -190,7 +190,7 @@ class DafdukWNI extends Controller
                             ],
                         ],
         );
-        return view('konten/dafduk_wni-datang', $data);
+        return view('konten/dafduk_wni/datang', $data);
     }
 
     public function statistik_kk(Request $request){

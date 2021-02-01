@@ -305,17 +305,17 @@
                             $('#judul_tabel').html("Statistik Jumlah Kepala Keluarga Menurut Penyandang Cacat"); 
                         }
                         
-                        $('#tabel').DataTable().destroy();
-                        $('#tabel').DataTable({
-                            dom: 'Bfrtip',
-                            buttons: [
-                                'copy', 'csv', 'excel', 'pdf', 'print'
-                            ],
-                            rowReorder: {
-                                selector: 'td:nth-child(2)'
-                            },
-                            responsive: true
-                        });
+                        // $('#tabel').DataTable().destroy();
+                        // $('#tabel').DataTable({
+                        //     dom: 'Bfrtip',
+                        //     buttons: [
+                        //         'copy', 'csv', 'excel', 'pdf', 'print'
+                        //     ],
+                        //     rowReorder: {
+                        //         selector: 'td:nth-child(2)'
+                        //     },
+                        //     responsive: true
+                        // });
                     },
                     //jika ajax gagal
                     error: function () {

@@ -259,21 +259,21 @@
                         $('#judul_tabel').html("Statistik Jumlah Penduduk Menurut jenis Pekerjaan"); 
                     }
                     
-                    $('#tabel').DataTable().destroy();
-                    $('#tabel').DataTable({
-                        dom: 'Bfrtip',
-                        lengthMenu: [
-                            [ 10, 25, 50, 100 ],
-                            [ '10 rows', '25 rows', '50 rows', '100 rows' ]
-                        ],
-                        buttons: [
-                            'pageLength', 'copy', 'csv', 'excel', 'pdf', 'print'
-                        ],
-                        rowReorder: {
-                            selector: 'td:nth-child(2)'
-                        },
-                        responsive: true
-                    });
+                    // $('#tabel').DataTable().destroy();
+                    // $('#tabel').DataTable({
+                    //     dom: 'Bfrtip',
+                    //     lengthMenu: [
+                    //         [ 10, 25, 50, 100 ],
+                    //         [ '10 rows', '25 rows', '50 rows', '100 rows' ]
+                    //     ],
+                    //     buttons: [
+                    //         'pageLength', 'copy', 'csv', 'excel', 'pdf', 'print'
+                    //     ],
+                    //     rowReorder: {
+                    //         selector: 'td:nth-child(2)'
+                    //     },
+                    //     responsive: true
+                    // });
                 },
                 //jika ajax gagal
                 error: function () {

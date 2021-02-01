@@ -16,12 +16,20 @@ use Illuminate\Support\Facades\Route;
 /* Dispenduk */
 Route::get('/', 'AdminController@dashboard');
 
-$router->group(['prefix' => 'dafduk_wni'], function () use ($router) {
     /* Daftar Penduduk WNI */
+$router->group(['prefix' => 'dafduk_wni'], function () use ($router) {
     Route::get('/kk', 'DafdukWNI@kk');
     Route::get('/biodata', 'DafdukWNI@biodata');
     Route::get('/pindah', 'DafdukWNI@pindah');
     Route::get('/datang', 'DafdukWNI@datang');
+});
+
+    /* Daftar Penduduk OA */
+$router->group(['prefix' => 'dafduk_oa'], function () use ($router) {
+    Route::get('/kk', 'DafdukOA@kk');
+    Route::get('/biodata', 'DafdukOA@biodata');
+    Route::get('/pindah', 'DafdukOA@pindah');
+    Route::get('/datang', 'DafdukOA@datang');
 });
 
 /* API */

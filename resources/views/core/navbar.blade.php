@@ -67,8 +67,10 @@
 
         <li class="
             sidebar-item  has-sub 
-            {{ Request::is('akses_admin/vbac/kelola_bot') ? 'active' : '' }} 
-            {{ Request::is('akses_admin/vbac/kelola_transaksi') ? 'active' : '' }}
+            {{ Request::is('dafduk_oa/kk') ? 'active' : '' }} 
+            {{ Request::is('dafduk_oa/biodata') ? 'active' : '' }}
+            {{ Request::is('dafduk_oa/pindah') ? 'active' : '' }}
+            {{ Request::is('dafduk_oa/datang') ? 'active' : '' }}
         ">
             <a href="#" class='sidebar-link'>
                 <i data-feather="layers" width="20"></i> 
@@ -77,29 +79,24 @@
             
             <ul class="
                 submenu 
-                {{ Request::is('akses_admin/vbac/kelola_bot') ? 'active' : '' }} 
-                {{ Request::is('akses_admin/vbac/kelola_transaksi') ? 'active' : '' }}
+                {{ Request::is('dafduk_oa/kk') ? 'active' : '' }} 
+                {{ Request::is('dafduk_oa/biodata') ? 'active' : '' }}
+                {{ Request::is('dafduk_oa/pindah') ? 'active' : '' }}
+                {{ Request::is('dafduk_oa/datang') ? 'active' : '' }}
             ">
                 <li style="
                         {{ 
-                            Request::is('akses_admin/vbac/kelola_bot') ? 'color: #96d4f9;border-right: solid;' : '' 
+                            Request::is('dafduk_oa/kk') ? 'color: #96d4f9;border-right: solid;' : '' 
                         }} 
                     ">
-                        <a href="{{ url('akses_admin/vbac/kelola_bot') }}">Kartu Keluarga</a>
+                        <a href="{{ url('dafduk_oa/kk') }}">Kartu Keluarga</a>
                 </li>
                 <li style="
                         {{ 
-                            Request::is('akses_admin/vbac/kelola_bot') ? 'color: #96d4f9;border-right: solid;' : '' 
+                            Request::is('dafduk_oa/biodata') ? 'color: #96d4f9;border-right: solid;' : '' 
                         }} 
                     ">
-                        <a href="{{ url('akses_admin/vbac/kelola_bot') }}">Biodata</a>
-                </li>
-                <li style="
-                        {{ 
-                            Request::is('akses_admin/vbac/kelola_transaksi') ? 'color: #96d4f9;border-right: solid;' : '' 
-                        }} 
-                    ">
-                        <a href="{{ url('akses_admin/vbac/kelola_transaksi') }}">Kelahiran WNI</a>
+                        <a href="{{ url('dafduk_oa/biodata') }}">Biodata</a>
                 </li>
             </ul>
         </li>

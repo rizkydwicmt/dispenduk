@@ -103,8 +103,10 @@
 
         <li class="
             sidebar-item  has-sub 
-            {{ Request::is('akses_admin/vbac/kelola_bot') ? 'active' : '' }} 
-            {{ Request::is('akses_admin/vbac/kelola_transaksi') ? 'active' : '' }}
+            {{ Request::is('pencatatan_sipil/kelahiran') ? 'active' : '' }} 
+            {{ Request::is('pencatatan_sipil/kematian') ? 'active' : '' }}
+            {{ Request::is('pencatatan_sipil/perkawinan') ? 'active' : '' }}
+            {{ Request::is('pencatatan_sipil/perceraian') ? 'active' : '' }}
         ">
             <a href="#" class='sidebar-link'>
                 <i data-feather="layers" width="20"></i> 
@@ -113,36 +115,38 @@
             
             <ul class="
                 submenu 
-                {{ Request::is('akses_admin/vbac/kelola_bot') ? 'active' : '' }} 
-                {{ Request::is('akses_admin/vbac/kelola_transaksi') ? 'active' : '' }}
+                {{ Request::is('pencatatan_sipil/kelahiran') ? 'active' : '' }} 
+                {{ Request::is('pencatatan_sipil/kematian') ? 'active' : '' }}
+                {{ Request::is('pencatatan_sipil/perkawinan') ? 'active' : '' }}
+                {{ Request::is('pencatatan_sipil/perceraian') ? 'active' : '' }}
             ">
                 <li style="
                         {{ 
-                            Request::is('akses_admin/vbac/kelola_bot') ? 'color: #96d4f9;border-right: solid;' : '' 
+                            Request::is('pencatatan_sipil/kelahiran') ? 'color: #96d4f9;border-right: solid;' : '' 
                         }} 
                     ">
-                        <a href="{{ url('akses_admin/vbac/kelola_bot') }}">Kelahiran WNI</a>
+                        <a href="{{ url('pencatatan_sipil/kelahiran') }}">Kelahiran WNI</a>
                 </li>
                 <li style="
                         {{ 
-                            Request::is('akses_admin/vbac/kelola_bot') ? 'color: #96d4f9;border-right: solid;' : '' 
+                            Request::is('pencatatan_sipil/kematian') ? 'color: #96d4f9;border-right: solid;' : '' 
                         }} 
                     ">
-                        <a href="{{ url('akses_admin/vbac/kelola_bot') }}">Kematian</a>
+                        <a href="{{ url('pencatatan_sipil/kematian') }}">Kematian</a>
                 </li>
                 <li style="
                         {{ 
-                            Request::is('akses_admin/vbac/kelola_transaksi') ? 'color: #96d4f9;border-right: solid;' : '' 
+                            Request::is('pencatatan_sipil/perkawinan') ? 'color: #96d4f9;border-right: solid;' : '' 
                         }} 
                     ">
-                        <a href="{{ url('akses_admin/vbac/kelola_transaksi') }}">Perkawinan</a>
+                        <a href="{{ url('pencatatan_sipil/perkawinan') }}">Perkawinan</a>
                 </li>
                 <li style="
                         {{ 
-                            Request::is('akses_admin/vbac/kelola_transaksi') ? 'color: #96d4f9;border-right: solid;' : '' 
+                            Request::is('pencatatan_sipil/perceraian') ? 'color: #96d4f9;border-right: solid;' : '' 
                         }} 
                     ">
-                        <a href="{{ url('akses_admin/vbac/kelola_transaksi') }}">Perceraian</a>
+                        <a href="{{ url('pencatatan_sipil/perceraian') }}">Perceraian</a>
                 </li>
             </ul>
         </li>

@@ -169,49 +169,4 @@ class DafdukOA extends Controller
         return view('konten/dafduk_oa/datang', $data);
     }
 
-    public function statistik_kk(Request $request){
-        $tanggal = explode('-', $request->bulan);
-        if($request->statistik == 1) $data = app('db')->table('t5_kepkel_kelamin');
-        if($request->statistik == 2) $data = app('db')->table('t5_kepkel_pendidikan');
-        if($request->statistik == 3) $data = app('db')->table('t5_kepkel_status_perkawinan');
-        if($request->statistik == 4) $data = app('db')->table('t5_kepkel_golongan_darah');
-        if($request->statistik == 5) $data = app('db')->table('t5_kepkel_agama');
-        if($request->statistik == 6) $data = app('db')->table('t5_kepkel_penyandang_cacat');
-        
-        $data = $data
-                ->whereMonth('BLN', $tanggal[1])
-                ->whereYear('BLN', $tanggal[0])
-                ->where('NO_PROP', $request->provinsi)
-                ->where('NO_KAB', $request->kabupaten)
-                ->where('NO_KEC', $request->kecamatan)
-                ->where('NO_KEL', $request->kelurahan)
-                ->get();
-                
-        return $data;
-    }
-
-    public function statistik_biodata(Request $request){
-        $tanggal = explode('-', $request->bulan);
-        if($request->statistik == 1) $data = app('db')->table('t5_stt_agr_penduduk');
-        if($request->statistik == 2) $data = app('db')->table('t5_stt_struktur_umur');
-        if($request->statistik == 3) $data = app('db')->table('t5_stt_pendidikan');
-        if($request->statistik == 4) $data = app('db')->table('t5_stt_pekerjaan');
-        if($request->statistik == 5) $data = app('db')->table('t5_stt_status_perkawinan');
-        if($request->statistik == 6) $data = app('db')->table('t5_stt_golongan_darah');
-        if($request->statistik == 7) $data = app('db')->table('t5_stt_agama');
-        if($request->statistik == 8) $data = app('db')->table('t5_stt_penyandang_cacat');
-        if($request->statistik == 9) $data = app('db')->table('t5_stt_wajib_ktp');
-        if($request->statistik == 10) $data = app('db')->table('t5_stt_stathbkel');
-        
-        $data = $data
-                ->whereMonth('BLN', $tanggal[1])
-                ->whereYear('BLN', $tanggal[0])
-                ->where('NO_PROP', $request->provinsi)
-                ->where('NO_KAB', $request->kabupaten)
-                ->where('NO_KEC', $request->kecamatan)
-                ->where('NO_KEL', $request->kelurahan)
-                ->get();
-                
-        return $data;
-    }
 }

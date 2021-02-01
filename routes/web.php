@@ -32,13 +32,27 @@ $router->group(['prefix' => 'dafduk_oa'], function () use ($router) {
     Route::get('/datang', 'DafdukOA@datang');
 });
 
+    /* Daftar Pencatatan Sipil */
+$router->group(['prefix' => 'pencatatan_sipil'], function () use ($router) {
+    Route::get('/kelahiran', 'PencatatanSipil@kelahiranWNI');
+    Route::get('/kematian', 'PencatatanSipil@kematian');
+    Route::get('/perkawinan', 'PencatatanSipil@perkawinan');
+    Route::get('/perceraian', 'PencatatanSipil@perceraian');
+});
+
 /* API */
     /* Filter */
 Route::post('get_kecamatan', 'Filter@kecamatan');
 Route::post('get_kelurahan', 'Filter@kelurahan');
 
+/* Daftar Penduduk WNI */
 $router->group(['prefix' => 'dafduk_wni'], function () use ($router) {
-    /* Daftar Penduduk WNI */
     Route::post('kk_statistik', 'DafdukWNI@statistik_kk');
     Route::post('biodata_statistik', 'DafdukWNI@statistik_biodata');
+});
+
+/* Daftar Pencatatan Sipil */
+$router->group(['prefix' => 'pencatatan_sipil'], function () use ($router) {
+    Route::post('kelahiran_statistik', 'PencatatanSipil@statistik_kelahiranWNI');
+    Route::post('biodata_statistik', 'PencatatanSipil@statistik_biodata');
 });

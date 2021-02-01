@@ -267,11 +267,11 @@
                             //insert tbody
                             if(data.length > 0)
                             {
-                                html += "<tbody><tr><td>"+data[0]?.DAK_LK+"</td><td>"+data[0]?.DAK_LP+"</td></tr></tbody>";
+                                html += "<tbody><tr role='row' class='even'><td>"+data[0]?.DAK_LK+"</td><td>"+data[0]?.DAK_LP+"</td></tr></tbody>";
                             } 
                             else
                             {
-                                html += "<tbody><tr><td>0</td><td>0</td></tr></tbody>";
+                                html += "<tbody><tr role='row' class='even'><td>0</td><td>0</td></tr></tbody>";
                             }
 
                             //insert ke id
@@ -287,14 +287,16 @@
                             //insert tbody
                             if(data.length > 0) 
                             {
+                                html += "<tbody>";
                                 for(let i=0; i<data.length; i++)
                                 {
-                                    html += "<tbody><tr><td>"+data[i]?.SORT+"</td><td>"+data[i]?.STRUKTUR_UMUR+"</td><td>"+data[i]?.LAKI_LAKI+"</td><td>"+data[i]?.PEREMPUAN+"</td><td>"+data[i]?.ADA_AKTA+"</td><td>"+data[i]?.TIDAK_ADA_AKTA+"</td></tr></tbody>";
+                                    html += "<tr role='row'><td>"+data[i]?.SORT+"</td><td>"+data[i]?.STRUKTUR_UMUR+"</td><td>"+data[i]?.LAKI_LAKI+"</td><td>"+data[i]?.PEREMPUAN+"</td><td>"+data[i]?.ADA_AKTA+"</td><td>"+data[i]?.TIDAK_ADA_AKTA+"</td></tr>";
                                 }
+                                html += "</tbody>";
                             } 
                             else
                             {
-                                html += "<tbody><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></tbody>";
+                                html += "<tbody><tr role='row' class='even'><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></tbody>";
                             }
 
                             //insert ke id
@@ -310,11 +312,11 @@
                             //insert tbody
                             if(data.length > 0) 
                             {
-                                html += "<tbody><tr><td>"+data[0]?.PDD01+"</td><td>"+data[0]?.PDD02+"</td><td>"+data[0]?.PDD03+"</td><td>"+data[0]?.PDD04+"</td><td>"+data[0]?.PDD05+"</td><td>"+data[0]?.PDD06+"</td><td>"+data[0]?.PDD07+"</td><td>"+data[0]?.PDD08+"</td><td>"+data[0]?.PDD09+"</td><td>"+data[0]?.PDD10+"</td><tr></tbody>";
+                                html += "<tbody><tr role='row' class='even'><td>"+data[0]?.PDD01+"</td><td>"+data[0]?.PDD02+"</td><td>"+data[0]?.PDD03+"</td><td>"+data[0]?.PDD04+"</td><td>"+data[0]?.PDD05+"</td><td>"+data[0]?.PDD06+"</td><td>"+data[0]?.PDD07+"</td><td>"+data[0]?.PDD08+"</td><td>"+data[0]?.PDD09+"</td><td>"+data[0]?.PDD10+"</td></tr></tbody>";
                             }
                             else
                             {
-                                html += "<tbody><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></tbody>";
+                                html += "<tbody><tr role='row' class='even'><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></tbody>";
                             }
 
                             //insert ke id
@@ -330,14 +332,16 @@
                             //insert tbody
                             if(data.length > 0) 
                             {
+                                html += "<tbody>";
                                 for(let i=0; i<data.length; i++)
                                 {
-                                    html += "<tbody><tr><td>"+data[i]?.KODE_PEKERJAAN+"</td><td>"+data[i]?.VALUE+"</td></tr></tbody>";
+                                    html += "<tr role='row'><td>"+data[i]?.KODE_PEKERJAAN+"</td><td>"+data[i]?.VALUE+"</td></tr>";
                                 }
+                                html += "</tbody>";
                             }
                             else
                             {
-                                html += "<tbody><tr><td>0</td><td>0</td></tr></tbody>";
+                                html += "<tbody><tr role='row' class='even'><td>0</td><td>0</td></tr></tbody>";
                             }
 
                             //insert ke id
@@ -353,11 +357,11 @@
                             //insert tbody
                             if(data.length > 0)
                             {
-                                html += "<tbody><tr><td>"+data[0]?.BELUM_KAWIN+"</td><td>"+data[0]?.KAWIN+"</td><td>"+data[0]?.CERAI_HIDUP+"</td><td>"+data[0]?.CERAI_MATI+"</td></tr></tbody>";
+                                html += "<tbody><tr role='row' class='even'><td>"+data[0]?.BELUM_KAWIN+"</td><td>"+data[0]?.KAWIN+"</td><td>"+data[0]?.CERAI_HIDUP+"</td><td>"+data[0]?.CERAI_MATI+"</td></tr></tbody>";
                             }
                                 else
                             {
-                                html += "<tbody><tr><td>0</td><td>0</td><td>0</td><td>0</td></tr></tbody>";
+                                html += "<tbody><tr role='row' class='even'><td>0</td><td>0</td><td>0</td><td>0</td></tr></tbody>";
                             }
 
                             //insert ke id
@@ -373,11 +377,11 @@
                             //insert tbody
                             if(data.length > 0)
                             {
-                                html += "<tbody><tr><td>"+data[0]?.A+"</td><td>"+data[0]?.B+"</td><td>"+data[0]?.AB+"</td><td>"+data[0]?.O+"</td><td>"+data[0]?.A_POS+"</td><td>"+data[0]?.A_MIN+"</td><td>"+data[0]?.B_POS+"</td><td>"+data[0]?.B_MIN+"</td><td>"+data[0]?.AB_POS+"</td><td>"+data[0]?.AB_MIN+"</td><td>"+data[0]?.O_POS+"</td><td>"+data[0]?.O_MIN+"</td><td>"+data[0]?.TIDAK_TAHU+"</td></tr></tbody>";
+                                html += "<tbody><tr role='row' class='even'><td>"+data[0]?.A+"</td><td>"+data[0]?.B+"</td><td>"+data[0]?.AB+"</td><td>"+data[0]?.O+"</td><td>"+data[0]?.A_POS+"</td><td>"+data[0]?.A_MIN+"</td><td>"+data[0]?.B_POS+"</td><td>"+data[0]?.B_MIN+"</td><td>"+data[0]?.AB_POS+"</td><td>"+data[0]?.AB_MIN+"</td><td>"+data[0]?.O_POS+"</td><td>"+data[0]?.O_MIN+"</td><td>"+data[0]?.TIDAK_TAHU+"</td></tr></tbody>";
                             }
                             else
                             {
-                                html += "<tbody><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></tbody>";
+                                html += "<tbody><tr role='row' class='even'><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></tbody>";
                             }
 
                             //insert ke id
@@ -393,11 +397,11 @@
                             //insert tbody
                             if(data.length > 0)
                             {
-                                html += "<tbody><tr><td>"+data[0]?.ISLAM+"</td><td>"+data[0]?.KRISTEN+"</td><td>"+data[0]?.KATHOLIK+"</td><td>"+data[0]?.HINDU+"</td><td>"+data[0]?.BUDHA+"</td><td>"+data[0]?.KONGHUCU+"</td><td>"+data[0]?.KEPERCAYAAN+"</td></tr></tbody>";
+                                html += "<tbody><tr role='row' class='even'><td>"+data[0]?.ISLAM+"</td><td>"+data[0]?.KRISTEN+"</td><td>"+data[0]?.KATHOLIK+"</td><td>"+data[0]?.HINDU+"</td><td>"+data[0]?.BUDHA+"</td><td>"+data[0]?.KONGHUCU+"</td><td>"+data[0]?.KEPERCAYAAN+"</td></tr></tbody>";
                             }
                             else
                             {
-                                html += "<tbody><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></tbody>";
+                                html += "<tbody><tr role='row' class='even'><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></tbody>";
                             }
 
                             //insert ke id
@@ -413,11 +417,11 @@
                             //insert tbody
                             if(data.length > 0)
                             {
-                                html += "<tbody><tr><td>"+data[0]?.FISIK+"</td><td>"+data[0]?.NETRA+"</td><td>"+data[0]?.RUNGU+"</td><td>"+data[0]?.MENTAL+"</td><td>"+data[0]?.FISIK_MENTAL+"</td><td>"+data[0]?.LAINNYA+"</td></tr></tbody>";
+                                html += "<tbody><tr role='row' class='even'><td>"+data[0]?.FISIK+"</td><td>"+data[0]?.NETRA+"</td><td>"+data[0]?.RUNGU+"</td><td>"+data[0]?.MENTAL+"</td><td>"+data[0]?.FISIK_MENTAL+"</td><td>"+data[0]?.LAINNYA+"</td></tr></tbody>";
                             }
                             else
                             {
-                                html += "<tbody><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></tbody>";
+                                html += "<tbody><tr role='row' class='even'><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></tbody>";
                             }
 
                             //insert ke id
@@ -434,11 +438,11 @@
                             
                             if(data.length > 0)
                             {
-                                html += "<tbody><tr><td>"+data[0]?.LK+"</td><td>"+data[0]?.LP+"</td></tr></tbody>";
+                                html += "<tbody><tr role='row' class='even'><td>"+data[0]?.LK+"</td><td>"+data[0]?.LP+"</td></tr></tbody>";
                             }
                             else
                             {
-                                html += "<tbody><tr><td>0</td><td>0</td></tr></tbody>";
+                                html += "<tbody><tr role='row' class='even'><td>0</td><td>0</td></tr></tbody>";
                             }
 
                             //insert ke id
@@ -454,11 +458,11 @@
                             //insert tbody
                             if(data.length > 0)
                             {
-                                html += "<tbody><tr><td>"+data[0]?.KEPALA_KELUARGA+"</td><td>"+data[0]?.SUAMI+"</td><td>"+data[0]?.ISTRI+"</td><td>"+data[0]?.ANAK+"</td><td>"+data[0]?.MENANTU+"</td><td>"+data[0]?.CUCU+"</td><td>"+data[0]?.ORANG_TUA+"</td><td>"+data[0]?.MERTUA+"</td><td>"+data[0]?.FAMILI_LAIN+"</td><td>"+data[0]?.PEMBANTU+"</td><td>"+data[0]?.LAINNYA+"</td></tr></tbody>";
+                                html += "<tbody><tr role='row' class='even'><td>"+data[0]?.KEPALA_KELUARGA+"</td><td>"+data[0]?.SUAMI+"</td><td>"+data[0]?.ISTRI+"</td><td>"+data[0]?.ANAK+"</td><td>"+data[0]?.MENANTU+"</td><td>"+data[0]?.CUCU+"</td><td>"+data[0]?.ORANG_TUA+"</td><td>"+data[0]?.MERTUA+"</td><td>"+data[0]?.FAMILI_LAIN+"</td><td>"+data[0]?.PEMBANTU+"</td><td>"+data[0]?.LAINNYA+"</td></tr></tbody>";
                             }
                             else
                             {
-                                html += "<tbody><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></tbody>";
+                                html += "<tbody><tr role='row' class='even'><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></tbody>";
                             }
 
                             //insert ke id
@@ -469,8 +473,12 @@
                         $('#tabel').DataTable().destroy();
                         $('#tabel').DataTable({
                             dom: 'Bfrtip',
+                            lengthMenu: [
+                                [ 10, 25, 50, 100 ],
+                                [ '10 rows', '25 rows', '50 rows', '100 rows' ]
+                            ],
                             buttons: [
-                                'copy', 'csv', 'excel', 'pdf', 'print'
+                                'pageLength', 'copy', 'csv', 'excel', 'pdf', 'print'
                             ],
                             rowReorder: {
                                 selector: 'td:nth-child(2)'

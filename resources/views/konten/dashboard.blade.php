@@ -28,7 +28,7 @@
             <div class="card-body p-0">
                 <div class="d-flex flex-column">
                     <div class='px-4 py-4 d-flex justify-content-between'>
-                        <h3 class='card-title'>Dikonfirmasi</h3>
+                        <h3 class='card-title'>Daftar penduduk WNI</h3>
                         <div class="card-right d-flex align-items-center">
                             <p>{{ $dikonfirmasi }}</p>
                         </div>
@@ -42,7 +42,7 @@
             <div class="card-body p-0">
                 <div class="d-flex flex-column">
                     <div class='px-4 py-4 d-flex justify-content-between'>
-                        <h3 class='card-title'>Menunggu</h3>
+                        <h3 class='card-title'>Daftar penduduk OA</h3>
                         <div class="card-right d-flex align-items-center">
                             <p>{{ $menunggu }} </p>
                         </div>
@@ -56,7 +56,7 @@
             <div class="card-body p-0">
                 <div class="d-flex flex-column">
                     <div class='px-4 py-4 d-flex justify-content-between'>
-                        <h3 class='card-title'>Ditolak</h3>
+                        <h3 class='card-title'>Pencatatan sipil</h3>
                         <div class="card-right d-flex align-items-center">
                             <p>{{ $ditolak }} </p>
                         </div>
@@ -70,7 +70,7 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-header">
-                <h3 class='card-heading p-1 pl-3'>Perkembangan webinar</h3>
+                <h3 class='card-heading p-1 pl-3'>Perkembangan</h3>
             </div>
             <div class="card-body">
                 <div class="row">
@@ -100,6 +100,7 @@
                 </div>
             </div>
         </div>
+        {{-- 
         <div class="card">
             <div class="card-header d-flex justify-content-between align-items-center">
                 <h4 class="card-title">List penjadwalan bulan ini</h4>
@@ -126,8 +127,8 @@
                                 <td>{{ $user->keperluan }}</td>
                                 <td>{{ $user->tanggal }}</td>
                             <?php
-                                list($masuk_hours, $masuk_minutes, $a) = explode(':', $user->jam_masuk);
-                                list($keluar_hours, $keluar_minutes, $b) = explode(':', $user->jam_keluar);
+                                // list($masuk_hours, $masuk_minutes, $a) = explode(':', $user->jam_masuk);
+                                // list($keluar_hours, $keluar_minutes, $b) = explode(':', $user->jam_keluar);
                             ?>
                                 <td>{{ $masuk_hours.':'.$masuk_minutes }} - {{ $keluar_hours.':'.$keluar_minutes }}</td>
                                 <td>
@@ -154,7 +155,8 @@
                     </table>
                 </div>
             </div>
-        </div>
+        </div> 
+        --}}
     </div>
 </div>
 @endsection
@@ -168,8 +170,8 @@
         orange: 'rgb(255, 159, 64)',
         yellow: 'rgb(255, 205, 86)',
         green: 'rgb(75, 192, 192)',
-        info: '#41B1F9',
-        blue: '#3245D1',
+        info: '#41f9dc',
+        blue: '#32d151',
         purple: 'rgb(153, 102, 255)',
         grey: '#EBEFF6'
         };

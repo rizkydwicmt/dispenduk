@@ -2,8 +2,8 @@
 @extends('core/navbar')
 @extends('core/footer')
 
-@section('title', 'Daftar Penduduk OA - Admin Panel')
-@section('page-title', 'Daftar Penduduk OA')
+@section('title', 'Daftar Penduduk OA - Sistem Informasi Statistik Data Kependudukan Kabupaten Sidoarjo')
+@section('page-title', 'Sistem Informasi Statistik Data Kependudukan Kabupaten Sidoarjo')
 @section('page-subtitle', '')
 
 @section('css')

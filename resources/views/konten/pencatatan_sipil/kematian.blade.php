@@ -2,8 +2,8 @@
 @extends('core/navbar')
 @extends('core/footer')
 
-@section('title', 'Daftar Pencatatan Sipil - Admin Panel')
-@section('page-title', 'Daftar Pencatatan Sipil')
+@section('title', 'Daftar Pencatatan Sipil - Sistem Informasi Statistik Data Kependudukan Kabupaten Sidoarjo')
+@section('page-title', 'Sistem Informasi Statistik Data Kependudukan Kabupaten Sidoarjo')
 @section('page-subtitle', '')
 
 @section('css')

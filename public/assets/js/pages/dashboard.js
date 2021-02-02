@@ -4,8 +4,8 @@ var chartColors = {
   orange: 'rgb(255, 159, 64)',
   yellow: 'rgb(255, 205, 86)',
   green: 'rgb(75, 192, 192)',
-  info: '#41B1F9',
-  blue: '#3245D1',
+  info: '#41f9dc',
+  blue: '#32d151',
   purple: 'rgb(153, 102, 255)',
   grey: '#EBEFF6'
 };
@@ -453,7 +453,7 @@ var radialBarsOptions = {
     palette: "palette1",
     monochrome: {
       enabled: true,
-      color: "#3245D1",
+      color: "#32d151",
       shadeTo: "light",
       shadeIntensity: 0.65,
     },

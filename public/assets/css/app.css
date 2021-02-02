@@ -70,11 +70,11 @@
  * 6. Responsive
  */
 .color-primary {
-  color: #5A8DEE;
+  color: #007e3d;
 }
 
 .color-secondary {
-  color: #475F7B;
+  color: #477b6d;
 }
 
 .color-success {
@@ -115,7 +115,7 @@
 
 #main {
   margin-left: 260px;
-  background-color: #F7FAFF;
+  background-color: #faf9ff;
   min-height: 100vh;
   transition: margin-left 0.6s ease-out;
 }
@@ -142,7 +142,7 @@ section .section-title:after {
   height: 2px;
   content: "";
   margin: 0.6rem 0 1rem;
-  background-color: #5A8DEE;
+  background-color: #007e3d;
   display: block;
 }
 
@@ -516,9 +516,9 @@ footer {
   padding-top: 2rem;
 }
 .form-group.with-title .form-control:focus ~ label, .form-group.with-title dataTable-input:focus ~ label {
-  border-left: 1px solid #5A8DEE;
-  border-top: 1px solid #5A8DEE;
-  border-right: 1px solid #5A8DEE;
+  border-left: 1px solid #007e3d;
+  border-top: 1px solid #007e3d;
+  border-right: 1px solid #007e3d;
 }
 .form-group[class*=has-icon-].has-icon-left .form-control {
   padding-left: 2.5rem;
@@ -533,7 +533,7 @@ footer {
   right: 0;
 }
 .form-group[class*=has-icon-] .form-control:focus ~ .form-control-icon i, .form-group[class*=has-icon-] .form-control:focus ~ .form-control-icon svg {
-  color: #5A8DEE;
+  color: #007e3d;
 }
 .form-group[class*=has-icon-] .form-control-icon {
   position: absolute;
@@ -552,8 +552,8 @@ footer {
   box-shadow: none;
 }
 .form-check .form-check-input.form-check-primary {
-  background-color: #5A8DEE;
-  border-color: #5A8DEE;
+  background-color: #007e3d;
+  border-color: #007e3d;
 }
 .form-check .form-check-input.form-check-primary:not(:checked) {
   background-color: transparent;
@@ -566,8 +566,8 @@ footer {
   box-shadow: none;
 }
 .form-check .form-check-input.form-check-secondary {
-  background-color: #475F7B;
-  border-color: #475F7B;
+  background-color: #477b6d;
+  border-color: #477b6d;
 }
 .form-check .form-check-input.form-check-secondary:not(:checked) {
   background-color: transparent;
@@ -686,12 +686,12 @@ footer {
   font-size: 0.7rem;
 }
 .form-check.form-check-primary .form-check-input {
-  background-color: #5A8DEE;
-  border-color: #5A8DEE;
+  background-color: #007e3d;
+  border-color: #007e3d;
 }
 .form-check.form-check-secondary .form-check-input {
-  background-color: #475F7B;
-  border-color: #475F7B;
+  background-color: #477b6d;
+  border-color: #477b6d;
 }
 .form-check.form-check-success .form-check-input {
   background-color: #39DA8A;
@@ -741,7 +741,7 @@ footer {
 .dataTable-input:focus {
   color: #555252;
   background-color: white;
-  border-color: #5A8DEE;
+  border-color: #007e3d;
   outline: 0;
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.1);
 }
@@ -845,7 +845,7 @@ footer {
   opacity: 1;
 }
 .sidebar-wrapper .menu .sidebar-link > span {
-  color: #053382;
+  color: #007e3d;
   font-weight: 500;
   margin-left: 1rem;
   opacity: 0.8;
@@ -864,7 +864,7 @@ footer {
   display: block;
 }
 .sidebar-wrapper .menu .sidebar-item.active .sidebar-link {
-  background-color: #e8f3ff;
+  background-color: #e8fff4;
 }
 .sidebar-wrapper .menu .sidebar-item.active .sidebar-link:before {
   content: "";
@@ -873,7 +873,7 @@ footer {
   height: 100%;
   top: 0;
   bottom: 0;
-  background-color: rgba(46, 170, 244, 0.5);
+  background-color: rgb(46 244 158 / 50%);
   width: 5px;
 }
 .sidebar-wrapper .menu .submenu {
@@ -912,8 +912,8 @@ footer {
   margin-bottom: 2.2rem;
 }
 .card.card-statistic {
-  box-shadow: 1px 2px 5px rgba(47, 170, 244, 0.5);
-  background: linear-gradient(to bottom, #25a6f1, #54b9ff);
+  box-shadow: 1px 2px 5px rgb(47 244 118 / 50%);
+  background: linear-gradient(to bottom, #079d50, #54ff91);
   border: none;
 }
 .card.card-statistic .card-title {
@@ -1001,12 +1001,12 @@ footer {
   margin-right: 7px;
 }
 .pricing .card-highlighted {
-  background-color: #5A8DEE;
+  background-color: #007e3d;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 .pricing .card-highlighted .card-header, .pricing .card-highlighted .card-body {
-  background-color: #5A8DEE;
+  background-color: #007e3d;
   color: #fff;
 }
 .pricing .card-highlighted ul li {
@@ -1016,7 +1016,7 @@ footer {
   color: tint-color(#28a745, 2);
 }
 .pricing .card-highlighted .card-footer {
-  background-color: #5A8DEE;
+  background-color: #007e3d;
 }
 .pricing .card-highlighted .card-title {
   color: #fff;
@@ -1041,7 +1041,7 @@ footer {
 .nav-tabs .nav-link.active {
   border: none;
   position: relative;
-  color: #5A8DEE;
+  color: #007e3d;
 }
 .nav-tabs .nav-link.active:after {
   content: "";
@@ -1049,7 +1049,7 @@ footer {
   position: absolute;
   bottom: 0;
   height: 2px;
-  background-color: #5A8DEE;
+  background-color: #007e3d;
   left: 0;
   box-shadow: 0 2px 5px rgba(90, 141, 238, 0.5);
 }
@@ -1091,13 +1091,13 @@ footer {
 
 /** 2.15 Pagination **/
 .pagination.pagination-primary .page-item.active .page-link {
-  background-color: #5A8DEE;
-  border-color: #5A8DEE;
+  background-color: #007e3d;
+  border-color: #007e3d;
   box-shadow: 0 2px 5px rgba(90, 141, 238, 0.3);
 }
 .pagination.pagination-secondary .page-item.active .page-link {
-  background-color: #475F7B;
-  border-color: #475F7B;
+  background-color: #477b6d;
+  border-color: #477b6d;
   box-shadow: 0 2px 5px rgba(71, 95, 123, 0.3);
 }
 .pagination.pagination-success .page-item.active .page-link {
@@ -1163,7 +1163,7 @@ footer {
 }
 
 .table thead th, .dataTable-table thead th {
-  border-bottom: 2px solid #475F7B;
+  border-bottom: 2px solid #477b6d;
 }
 
 .dataTable-container {
@@ -1175,7 +1175,7 @@ footer {
   overflow: visible;
 }
 .progress.progress-primary .progress-bar {
-  background-color: #5A8DEE;
+  background-color: #007e3d;
   border-radius: 1rem;
   box-shadow: 0px 2px 3px rgba(90, 141, 238, 0.8);
 }
@@ -1183,7 +1183,7 @@ footer {
   overflow: visible;
 }
 .progress.progress-secondary .progress-bar {
-  background-color: #475F7B;
+  background-color: #477b6d;
   border-radius: 1rem;
   box-shadow: 0px 2px 3px rgba(71, 95, 123, 0.8);
 }
@@ -1267,7 +1267,7 @@ footer {
   border-radius: 5px;
 }
 .chat.chat-left .chat-message {
-  background: #5A8DEE !important;
+  background: #007e3d !important;
   float: left !important;
   color: #fff;
 }
@@ -1463,19 +1463,19 @@ footer {
 }
 
 .text-info {
-  color: #41B1F9;
+  color: #41f9dc;
 }
 
 .bg-info {
-  background-color: #41B1F9 !important;
+  background-color: #41f9dc !important;
 }
 
 .text-blue {
-  color: #3245D1;
+  color: #32d151;
 }
 
 .bg-blue {
-  background-color: #3245D1 !important;
+  background-color: #32d151 !important;
 }
 
 .text-purple {

@@ -1,5 +1,5 @@
 @section('sidebar-header')
-    <img src="{{ asset('/assets/images/logo.svg') }}" alt="" srcset="">
+    <img src="http://103.254.169.147/templates/assets/client/img/logo_new.jpg" alt="" srcset="">
 @endsection
 
 @section('sidebar-menu')
@@ -36,28 +36,28 @@
             ">
                 <li style="
                     {{ 
-                        Request::is('dafduk_wni/kk') ? 'color: #96d4f9;border-right: solid;' : '' 
+                        Request::is('dafduk_wni/kk') ? 'color: #8be5c0;border-right: solid;' : '' 
                     }} 
                 ">
                     <a href="{{ url('dafduk_wni/kk') }}">Kartu Keluarga</a>
                 </li>
                 <li style="
                     {{ 
-                        Request::is('dafduk_wni/biodata') ? 'color: #96d4f9;border-right: solid;' : '' 
+                        Request::is('dafduk_wni/biodata') ? 'color: #8be5c0;border-right: solid;' : '' 
                     }} 
                 ">
                     <a href="{{ url('dafduk_wni/biodata') }}">Biodata</a>
                 </li>
                 <li style="
                         {{ 
-                            Request::is('dafduk_wni/pindah') ? 'color: #96d4f9;border-right: solid;' : '' 
+                            Request::is('dafduk_wni/pindah') ? 'color: #8be5c0;border-right: solid;' : '' 
                         }} 
                     ">
                         <a href="{{ url('dafduk_wni/pindah') }}">Pindah</a>
                 </li>
                 <li style="
                         {{ 
-                            Request::is('dafduk_wni/datang') ? 'color: #96d4f9;border-right: solid;' : '' 
+                            Request::is('dafduk_wni/datang') ? 'color: #8be5c0;border-right: solid;' : '' 
                         }} 
                     ">
                         <a href="{{ url('dafduk_wni/datang') }}">Datang</a>
@@ -86,14 +86,14 @@
             ">
                 <li style="
                         {{ 
-                            Request::is('dafduk_oa/kk') ? 'color: #96d4f9;border-right: solid;' : '' 
+                            Request::is('dafduk_oa/kk') ? 'color: #8be5c0;border-right: solid;' : '' 
                         }} 
                     ">
                         <a href="{{ url('dafduk_oa/kk') }}">Kartu Keluarga</a>
                 </li>
                 <li style="
                         {{ 
-                            Request::is('dafduk_oa/biodata') ? 'color: #96d4f9;border-right: solid;' : '' 
+                            Request::is('dafduk_oa/biodata') ? 'color: #8be5c0;border-right: solid;' : '' 
                         }} 
                     ">
                         <a href="{{ url('dafduk_oa/biodata') }}">Biodata</a>
@@ -122,28 +122,28 @@
             ">
                 <li style="
                         {{ 
-                            Request::is('pencatatan_sipil/kelahiran') ? 'color: #96d4f9;border-right: solid;' : '' 
+                            Request::is('pencatatan_sipil/kelahiran') ? 'color: #8be5c0;border-right: solid;' : '' 
                         }} 
                     ">
                         <a href="{{ url('pencatatan_sipil/kelahiran') }}">Kelahiran WNI</a>
                 </li>
                 <li style="
                         {{ 
-                            Request::is('pencatatan_sipil/kematian') ? 'color: #96d4f9;border-right: solid;' : '' 
+                            Request::is('pencatatan_sipil/kematian') ? 'color: #8be5c0;border-right: solid;' : '' 
                         }} 
                     ">
                         <a href="{{ url('pencatatan_sipil/kematian') }}">Kematian</a>
                 </li>
                 <li style="
                         {{ 
-                            Request::is('pencatatan_sipil/perkawinan') ? 'color: #96d4f9;border-right: solid;' : '' 
+                            Request::is('pencatatan_sipil/perkawinan') ? 'color: #8be5c0;border-right: solid;' : '' 
                         }} 
                     ">
                         <a href="{{ url('pencatatan_sipil/perkawinan') }}">Perkawinan</a>
                 </li>
                 <li style="
                         {{ 
-                            Request::is('pencatatan_sipil/perceraian') ? 'color: #96d4f9;border-right: solid;' : '' 
+                            Request::is('pencatatan_sipil/perceraian') ? 'color: #8be5c0;border-right: solid;' : '' 
                         }} 
                     ">
                         <a href="{{ url('pencatatan_sipil/perceraian') }}">Perceraian</a>
